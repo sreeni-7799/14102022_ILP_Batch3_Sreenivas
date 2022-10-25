@@ -1,0 +1,32 @@
+package com.experion.entity;
+
+import java.util.ArrayList;
+
+public class Card extends Product {
+
+	private String cardType;
+	private double cardBalance;
+
+	public Card(String productName, String cardType, double cardBalance) {
+		super(productName);
+		this.cardType = cardType;
+		this.cardBalance = cardBalance;
+	}
+
+	public String getCardType() {
+		return cardType;
+	}
+
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
+	}
+
+	public double getCardBalance() {
+		return cardBalance;
+	}
+
+	public void setCardBalance(double cardBalance) {
+		this.cardBalance = cardBalance;
+	}
+
+	}

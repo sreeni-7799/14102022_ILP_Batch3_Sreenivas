@@ -1,0 +1,92 @@
+public class Service {
+
+
+
+   public static Account createsavingsAccount() throws Exception {
+
+
+
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Customer Code - ");
+        String customerCode = scanner.nextLine();
+        System.out.println("Enter Customer Name - ");
+        String customerName = scanner.nextLine();
+        System.out.println("Savings Max Account created for"+"    "+customerName);
+        System.out.println("Account is Active!!");
+        
+        
+        
+
+
+
+       Account account = new Account(customerCode, customerName);
+        //product.setSerielNo(product.getSerielNo() + 1);
+        //roduct.setSerielNoOriginal(product.getSerielNo());
+        return account;
+
+
+
+}
+    public static Account createcurrentAccount() throws Exception {
+
+
+
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Customer Code - ");
+        String customerCode = scanner.nextLine();
+        System.out.println("Enter Customer Name - ");
+        String customerName = scanner.nextLine();
+        System.out.println("Current Account created for"+"    "+customerName);
+        System.out.println("Account is Active!!");
+        
+        
+        
+
+
+
+       Account account = new Account(customerCode, customerName);
+        //product.setSerielNo(product.getSerielNo() + 1);
+        //roduct.setSerielNoOriginal(product.getSerielNo());
+        return account;
+
+
+
+}
+    public static Account createloanAccount() throws Exception {
+
+
+
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Customer Code - ");
+        String customerCode = scanner.nextLine();
+        System.out.println("Enter Customer Name - ");
+        String customerName = scanner.nextLine();
+        System.out.println("Loan Account created for"+"    "+customerName);
+        System.out.println("Account is Active!!");
+        
+        
+        
+
+
+
+       Account account = new Account(customerCode, customerName);
+        //product.setSerielNo(product.getSerielNo() + 1);
+        //roduct.setSerielNoOriginal(product.getSerielNo());
+        return account;
+
+
+
+}
+    public static void manageAccount(ArrayList<Account> accountList) throws Exception {
+
+
+
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the custome ID:");
+        String customerCode = scanner.nextLine();
+        }
+    public static void displaydetailsofAccount(ArrayList<Account> accountList) {
+        System.out.println("CustomerId:" + "\t" + "Customer Name ");
+        
+    }
+}

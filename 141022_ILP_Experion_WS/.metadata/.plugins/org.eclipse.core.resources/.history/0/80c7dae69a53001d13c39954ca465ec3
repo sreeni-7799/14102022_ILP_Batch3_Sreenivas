@@ -1,0 +1,69 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class Assignment_2 {
+
+	public static void main(String[] args) {
+			System.out.println("\n***** PROGRAM TO ARRANGE FOUR NUMBERS IN ASCENDING AND DESCENDING ORDER *******\n\n");
+
+			Scanner scanner = new Scanner(System.in);
+			int number1;
+			int number2;
+			int number3;
+			int number4;
+			int large1 = 0;
+			int large2 = 0;
+			int large3 = 0;
+			int large4=0;
+
+			System.out.println("Enter the 4 numbers");
+
+			number1 = scanner.nextInt();
+			number2 = scanner.nextInt();
+			number3 = scanner.nextInt();
+			number4 = scanner.nextInt();
+
+			System.out.println("The numbers before sorting");
+
+			System.out.print(number1 + "\t" + number2 + "\t" + number3+ "\t" + number4);
+
+			int temp;
+			if (number1 > number2) {// swapping numbers to shift the bigger number to last
+				temp = number1;
+				number1 = number2;
+				number2 = temp;
+			}
+			if (number3 > number4) {
+				temp = number3;
+				number3 = number4;
+				number4 = temp;
+			}
+			if (number1 > number3) {
+				temp = number1;
+				number1 = number3;
+				number3 = temp;
+			}
+			if (number2 > number4) {
+				temp = number2;
+				number2 = number4;
+				number4 = temp;
+			}
+			if (number2 > number3) {
+				temp = number2;
+				number2 = number3;
+				number3 = temp;
+			}
+
+			System.out.println("\nThe numbers after sorting in ascending order\n" + number1 + "\t" + number2 + "\t"
+					+ number3 + "\t" + number4);
+			System.out.println("\nThe numbers after sorting in descending order\n" + number4 + "\t" + number3 + "\t"
+					+ number2 + "\t" + number1);
+
+			// TODO Auto-generated method stub
+
+		
+
+	}
+}
+		

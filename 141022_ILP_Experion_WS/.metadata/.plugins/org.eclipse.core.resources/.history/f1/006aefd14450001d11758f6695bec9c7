@@ -1,0 +1,23 @@
+package com.experion.entity;
+
+public abstract class Product {
+
+	private String accounttype;
+
+	public Product(String accounttype) {
+		
+		this.accounttype = accounttype;
+	}
+
+	public String getAccounttype() {
+		return accounttype;
+	}
+
+	public void setAccounttype(String accounttype) {
+		this.accounttype = accounttype;
+	}
+
+	
+	
+	
+}

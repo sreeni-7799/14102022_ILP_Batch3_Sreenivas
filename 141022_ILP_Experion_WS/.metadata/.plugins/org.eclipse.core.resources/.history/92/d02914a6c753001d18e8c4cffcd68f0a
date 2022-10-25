@@ -1,0 +1,15 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class Assignment_11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the size of the array:");
+		int size = scanner.nextInt();
+		int number[]=new int[size];
+	}
+
+}

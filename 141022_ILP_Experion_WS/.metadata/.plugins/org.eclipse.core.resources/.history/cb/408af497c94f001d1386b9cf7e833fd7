@@ -1,0 +1,19 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class assignment_3 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		int count = 0;
+		double half=0.5;
+		System.out.println("Enter the number:");
+		count=scanner.nextInt();
+		double sum=half*(count+1);
+		System.out.println(sum);
+
+	}
+
+}

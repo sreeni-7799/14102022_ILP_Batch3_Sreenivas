@@ -1,0 +1,14 @@
+package com.experion.Utility;
+
+import com.experion.entity.Product;
+
+public class ProductUtility {
+
+	public static void main(String[] args) {
+		Product product=new Product();
+		product.inpuutProductDetails();
+		product.displayProductDetails();// TODO Auto-generated method stub
+
+	}
+
+}

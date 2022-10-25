@@ -1,0 +1,14 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class Assignment_9 {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the range:");
+		Scanner scanner=new Scanner(System.in);
+		int range=scanner.nextInt();// TODO Auto-generated method stub
+
+	}
+
+}

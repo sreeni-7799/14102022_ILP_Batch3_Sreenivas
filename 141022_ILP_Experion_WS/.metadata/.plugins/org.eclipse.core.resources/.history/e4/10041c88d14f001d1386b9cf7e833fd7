@@ -1,0 +1,33 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class Assignment_5 {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		int count = 0;
+		int flag=0;
+		int sum=0;
+		int product;
+		System.out.println("Enter the number:");
+		count=scanner.nextInt();
+		for (int integer=1;integer<=count;integer+=2) {
+			
+			flag=flag+1;
+			product=1;
+			for(int integer1;integer1<=1;integer++) 
+			{	
+				product=product*integer;
+			}
+				if(flag%2==0) {
+				
+				sum=sum-product;
+			}else {
+				sum=sum+product;
+			}
+		}System.out.println("Sum : "+sum);// TODO Auto-generated method stub
+
+	}
+
+}

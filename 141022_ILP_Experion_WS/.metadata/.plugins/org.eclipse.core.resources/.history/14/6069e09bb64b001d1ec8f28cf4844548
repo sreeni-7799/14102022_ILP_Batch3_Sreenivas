@@ -1,0 +1,19 @@
+package com.ilpexperion.ObjectClassBasics;
+
+import java.util.Scanner;
+
+public class MiddleNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner =new Scanner(System.in);
+		int FirstNumber;
+		int SecondNumber;
+		int ThirdNumber;
+		
+		System.out.println("Enter the First number:");
+		FirstNumber=scanner.nextInt();// TODO Auto-generated method stub
+
+	}
+
+}

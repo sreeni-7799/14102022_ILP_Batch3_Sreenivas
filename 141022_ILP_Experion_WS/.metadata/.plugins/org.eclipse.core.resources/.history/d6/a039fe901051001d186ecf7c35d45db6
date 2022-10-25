@@ -1,0 +1,68 @@
+package com.bank.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.bank.entity.Account;
+import com.bank.entity.Customer;
+import com.bank.service.MisService;
+import com.bank.service.Service;
+
+public class utility1 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<Account> accountList = new ArrayList<Account>();
+		Customer customer = null;
+		char choice = 0;
+		do 
+		{
+		System.out.println("1.New account 2.Existing Account");
+		int subChoice=scanner.nextInt();
+		switch(subChoice)
+		{
+		case 1:String customerAccountChoice = MisService.enterAccountChoice();
+				accountList.add(Service.createAccount(customerAccountChoice));
+				customer = Service.createCustomer(accountList);
+	
+		case 2:
+			do
+			{
+			System.out.println("1.Deposit Money\n2. Withraw Money\n3.Display Account Details");
+			int mainChoice = scanner.nextInt();
+			switch(mainChoice)
+			{
+
+				case 1:  
+					if(customer==null) {
+						System.out.println("Create An Account First");
+					}
+					else {
+						Service.depositMoney(customer);
+					}
+						break;
+				case 2:
+					if(customer==null) {
+						System.out.println("Create An Account First");
+					}
+					else {
+						Service.withdrawMoney(customer);
+					}
+				case 3: 
+					if(customer==null) {
+						System.out.println("Create An Account First");
+					}
+					else{
+						Service.displayAccountDetails(accountList);
+					}
+			}
+			System.out.println("Do you want to continue : - ");
+			choice = scanner.next().charAt(0);
+			
+		}
+		while(choice == 'y');
+		}
+	
+		}while(choice=='y');
+	}
+}

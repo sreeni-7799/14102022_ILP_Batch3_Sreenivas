@@ -1,0 +1,24 @@
+package com.experion.service;
+
+public class BankService {
+
+	public static void main(String[] args) {
+	
+
+	public static void createCardProduct() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void createAccountProduct() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public static void buyProduct() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,53 @@
+package com.experion.assignment;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Assignment_15 {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the size of the array:");
+		int size = scanner.nextInt();
+		int number[]=new int[size];
+		
+		System.out.println("Enter the elements of the array");
+		for (int index=0;index<number.length;index++) {
+			number[index]=scanner.nextInt();
+			}
+		Arrays.sort(number);
+		int count=0;
+		
+		for (int index = 0; index < number.length; index++) {
+			
+			
+			count=1;
+			
+			for (int innerIndex = index + 1; innerIndex < number.length; innerIndex++) {
+				if (number[index] == number[innerIndex]) {
+					count++;
+					number[innerIndex]=-1;
+				}
+					
+				else
+					break;
+
+			}
+			
+			index += count - 1;
+		}
+		
+		
+		System.out.println("Unique elements are");
+		for(int number1:number)
+		{
+			if(number1!=-1)
+			System.out.print(number+"\t");
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+	}
+
+}

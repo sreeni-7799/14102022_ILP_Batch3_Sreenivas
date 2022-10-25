@@ -1,0 +1,48 @@
+package com.experion.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Account;
+import com.experion.service.Service;
+
+public class ProductUtility {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<Account> accountList=new ArrayList<Account>();
+		System.out.println("*****Welcome to the Bank *****");
+		
+		System.out.println("1.Create Account 2.Manage Account 3.Display Account 4.Exit");
+		System.out.println("Enter your Choice");
+		int choice = scanner.nextInt();
+		switch(choice)
+		{
+		case 1:accountList.add(Service.displayAccount());
+				System.out.println("Enter your Choice");
+				int subchoice=scanner.nextInt();
+				switch(subchoice) {
+				
+				case 1: accountList.add(Service.createSavingsAccount());
+				break;
+				case 2: accountList.add(Service.createCurrentAccount());
+				break;
+				case 3: accountList.add(Service.createLoanAccount());
+				break;
+				}
+				break;
+		case 2:System.out.println("Enter the customer ID");
+			   String ID=scanner.nextLine();
+
+				   
+			   }
+			   
+			
+			
+		
+		}
+	}
+
+

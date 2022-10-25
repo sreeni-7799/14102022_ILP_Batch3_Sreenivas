@@ -1,0 +1,16 @@
+package com.experion.utility;
+
+import com.experion.entity.Account;
+import com.experion.entity.Product;
+import com.experion.service.AccountService;
+
+public class ProductUtility {
+
+	public static void main(String[] args) {
+		Account account = new Account("Womens Savings Account", "ACCE1234", 10000);
+		AccountService accountService=new AccountService();
+		accountService.depositCash(account, 2000);
+		accountService.depositCash(account, 0, "Sreeni7799");
+		accountService.depositCash(account, "uey6263", 100000);
+	}
+}

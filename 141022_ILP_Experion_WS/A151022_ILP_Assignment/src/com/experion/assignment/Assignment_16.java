@@ -1,0 +1,36 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class Assignment_16 {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the string");
+		String entered=scanner.nextLine();
+		System.out.println("Enter the element to be replaced");
+		char replace=scanner.next().charAt(0);
+		System.out.println("Enter the element to be repleced with");
+		char newElement=scanner.next().charAt(0);
+		
+		int count = 0;
+		String newString = "";
+		for (int index = 0; index < entered.length(); index++) {
+			if (entered.charAt(index) == replace) {
+				count++;
+				newString = entered.replace(entered.charAt(index), newElement);
+			}
+
+		}
+		if (count == 0)
+			System.out.println("The character is not present in the string");
+		else
+			System.out.println("The character occurs " + count + " times.\nNew string after replacement is:\n"
+					+ newString);
+
+	}
+		
+		
+	}
+
+

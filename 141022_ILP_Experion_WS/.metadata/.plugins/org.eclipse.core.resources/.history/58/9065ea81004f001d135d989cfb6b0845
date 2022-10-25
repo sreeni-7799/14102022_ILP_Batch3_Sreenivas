@@ -1,0 +1,19 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class assignment_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner=new Scanner(System.in);
+		int number[];
+		number=new int[10];
+		for(int integer = 1;integer<4;integer++) {
+			System.out.println("Enter Number "+integer+" : ");
+			number[integer]=scanner.nextInt();
+		}
+
+	}
+
+}

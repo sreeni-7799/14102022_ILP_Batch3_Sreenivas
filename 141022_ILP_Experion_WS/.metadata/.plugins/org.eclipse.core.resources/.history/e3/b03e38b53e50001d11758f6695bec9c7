@@ -1,0 +1,31 @@
+package com.experion.entity;
+
+public abstract class Product {
+
+	private String AccountName;
+
+	
+	
+	public Product(String accountName) {
+		super();
+		AccountName = accountName;
+	}
+	
+
+
+	public String getAccountName() {
+		return AccountName;
+	}
+
+
+
+	public void setAccountName(String accountName) {
+		AccountName = accountName;
+	}
+
+
+
+	public abstract void checkProductValidity();
+	
+	
+}

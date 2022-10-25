@@ -1,0 +1,25 @@
+package com.ilpexperion.ObjectClassBasics;
+
+import java.util.Scanner;
+
+public class MiddleNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner =new Scanner(System.in);
+		int FirstNumber;
+		int SecondNumber;
+		int ThirdNumber;
+		
+		System.out.println("Enter the First number:");
+		FirstNumber=scanner.nextInt();
+		System.out.println("Enter the Second number:");
+		SecondNumber=scanner.nextInt();
+		System.out.println("Enter the Third number:");
+		ThirdNumber=scanner.nextInt();
+		
+		if(FirstNumber<SecondNumbe)// TODO Auto-generated method stub
+
+	}
+
+}

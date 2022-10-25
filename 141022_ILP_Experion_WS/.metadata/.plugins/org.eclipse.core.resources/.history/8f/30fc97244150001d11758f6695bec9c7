@@ -1,0 +1,55 @@
+package com.experion.entity;
+
+public class Account 
+{
+	
+	private String accountType;
+	private String customerID;
+	private double accountBalance;
+	private String customerName;
+	
+	public Account(String accountType, String customerID, double accountBalance, String customerName) {
+		super();
+		this.accountType = accountType;
+		this.customerID = customerID;
+		this.accountBalance = accountBalance;
+		this.customerName = customerName;
+	}
+
+	public String getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+
+	public String getCustomerID() {
+		return customerID;
+	}
+
+	public void setCustomerID(String customerID) {
+		this.customerID = customerID;
+	}
+
+	public double getAccountBalance() {
+		return accountBalance;
+	}
+
+	public void setAccountBalance(double accountBalance) {
+		this.accountBalance = accountBalance;
+	}
+
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	
+	
+	
+	
+	
+}

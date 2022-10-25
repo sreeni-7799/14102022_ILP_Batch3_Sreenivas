@@ -1,0 +1,45 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class Assignment_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int number[];
+		number = new int[10];
+		int temp = 0;
+		for (int integer = 0; integer < 4; integer++) {
+			System.out.println("Enter the Four Numbers:");
+			number[integer] = scanner.nextInt();
+		}
+		System.out.println("Ascending Order");
+
+		for (int integer = 0; integer < 4; integer++) {
+			for (int integer1= integer + 1; integer1 < 4; integer1++) {
+				if (number[integer] > number[integer1]) {
+					temp = number[integer];
+					number[integer] = number[integer1];
+					number[integer1] = temp;
+
+				} else {
+					continue;
+				}
+			}
+		}
+		for(int integer=1;integer<4;integer++) {
+			
+			System.out.println(number[integer]);
+		}
+	}
+}
+		/*for (int integer = 1; integer < 4; integer++) {
+			for (integer = integer + 1; integer < 4; integer++) {
+				if (number[integer] < number[integer + 1]) {
+					temp = number[integer];
+					number[integer] = number[integer + 1];
+					number[integer + 1] = temp;
+
+	}\*/
+		

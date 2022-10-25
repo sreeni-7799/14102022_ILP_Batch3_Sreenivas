@@ -1,0 +1,58 @@
+package com.experion.assignment;
+
+import java.util.Scanner;
+
+public class assignment_1 {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int number1;
+		int number2;
+		int number3;
+		int large1;
+		int large2;
+		int large3;
+
+		System.out.println("Enter  the 3 numbers");
+		number1 = scanner.nextInt();
+		number2 = scanner.nextInt();
+		number3 = scanner.nextInt();
+
+		if (number1 > number2 && number1 > number3) {
+			if (number2 > number3) {
+				large1 = number1;
+				large2 = number2;
+				large3 = number3;
+			} else if (number3 > number2) {
+				large1 = number1;
+				large2 = number3;
+				large3 = number2;
+			} else if (number2 > number1 && number2 > number3) {
+				if (number1 > number3) {
+					large1 = number2;
+					large2 = number1;
+					large3 = number3;
+				} else if (number3 > number1) {
+					large1 = number2;
+					large2 = number3;
+					large3 = number1;
+				}
+			} else if (number3 > number1 && number3 > number2) {
+				if (number1 > number2) {
+					large1 = number3;
+					large2 = number1;
+					large3 = number2;
+				} else if (number2 > number1) {
+					large1 = number3;
+					large2 = number2;
+					large3 = number1;
+				}
+			}
+		}
+	}
+}
+System.out.println(
+		"\nThe numbers after sorting in descending order\n" + large1 + "\t" + large2 + "\t" + large3);
+
+		

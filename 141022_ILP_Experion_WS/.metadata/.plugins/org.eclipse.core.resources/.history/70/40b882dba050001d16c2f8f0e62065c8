@@ -1,0 +1,54 @@
+package com.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.entity.Customer;
+import com.service.Service;
+
+public class AccountUtility {
+	public static void main(String args[])throws Exception
+	{
+		String choice2, customerName;
+		char mainChoice;
+		boolean flag = false;
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<Customer> customerList = new ArrayList<Customer>();
+		do
+		{
+			System.out.println("******** Welcome To Bank********");
+			System.out.println("1. Create Accounts\n2. Manage Accounts\n3. Exit");
+			System.out.print("Enter your choice: ");
+			int choice = scanner.nextInt();
+			switch(choice)
+			{
+			case 1: System.out.println("Enter the customer id: ");
+					choice2 = scanner.nextLine();
+					
+					//boolean tf = Service.checkCustomerID(choice2, customerList);
+					for(Customer customer : customerList)
+					{
+						if(choice2.equalsIgnoreCase(customer.getCustomerId()))
+						{
+							flag = false;
+						}
+						else
+							flag = true;
+					}
+					
+					if(flag==false)
+					{
+						System.out.println("Customer Id not available.Create a new Account\n****Accounts Available***********"+
+						"\n1. Savings Max Account\n2. Current Account\n3. Loan Account");
+						System.out.println("Enter the customer id: ");
+						choice2 = scanner.nextLine();
+						System.out.println("Enter Customer Name: ");
+						customerName = scanner.nextLine();
+						customerList.add(Customer(choice2,customerName));
+					}
+			}
+			System.out.println("Do you want to continue? y/n");
+			mainChoice = scanner.next().charAt(0);
+		} while (mainChoice == 'y'||mainChoice=='Y');
+	}
+}

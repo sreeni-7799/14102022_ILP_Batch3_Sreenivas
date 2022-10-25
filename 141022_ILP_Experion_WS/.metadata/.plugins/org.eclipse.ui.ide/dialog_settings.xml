@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\141022_ILP_Experion_WS\21102022_UseCaseDiscussion_Sreeni"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\sreenivas.shenoy\Downloads\assignment (2).zip"/>
+			<item value="C:\Users\sreenivas.shenoy\Downloads\Assessment.zip"/>
+			<item value="C:\141022_ILP_Experion_WS\21102022_UseCaseDiscussion_Robin"/>
+			<item value="C:\Users\sreenivas.shenoy\Downloads\assignment.zip"/>
+			<item value="C:\Users\sreenivas.shenoy\Downloads\stackoverfloww.zip"/>
+			<item value="D:\ILP_Experion\Shared_documents_by_sujeesh\CCJP12_Day12_DateTime.zip"/>
+			<item value="C:\Users\sreenivas.shenoy\Downloads\18102022_ILP_StackOverflow.zip"/>
+			<item value="C:\Users\sreenivas.shenoy\Downloads\stackoverflow.zip"/>
+			<item value="D:\ILP_Experion\Shared_documents_by_sujeesh\171022\POJO.zip"/>
+			<item value="D:\ILP_Experion\Shared_documents_by_sujeesh\15102022\DemonstrationProgram14102022.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="C:\141022_ILP_Experion_WS"/>
+	</section>
+</section>

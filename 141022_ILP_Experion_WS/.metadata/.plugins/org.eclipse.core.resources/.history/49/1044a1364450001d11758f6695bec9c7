@@ -1,0 +1,30 @@
+package com.experion.service;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Account;
+import com.experion.entity.Product;
+
+public class Service {
+
+	public static Account displayAccount() 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("1.Savings Max Account 2.Current Account 3.Loan Account");
+		String accountType = scanner.nextLine();// TODO Auto-generated method stub
+		Account account=new Account(accountType, accountType, 0, accountType);
+		return account;
+
+	}
+	public static Product depositMoney(ArrayList<Account>accountMoney) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter the money to be deposited:");
+		int money=scanner.nextInt();		
+		for (Account account:accountMoney) 
+		{
+			double accountBalance=accountBal;
+	}
+}
+}
