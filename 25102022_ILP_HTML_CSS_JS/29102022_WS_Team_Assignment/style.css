@@ -1,0 +1,16 @@
+.eventhead{
+    background-image: url('MicrosoftTeams-image.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size:auto;
+    max-width: 50%;
+    padding: 100px;
+    background-position:center;
+    color: rgb(249, 251, 252);
+    background-size: contain, cover;
+}
+
+.eventhead:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  }
